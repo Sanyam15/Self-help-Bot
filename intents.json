@@ -1,0 +1,57 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""],
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]      ,
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""],
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""],
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am here to guide you through any issues about EBI"],
+         "context": [""],
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "information",
+         "patterns": ["Tell me about Syngenta.","Information about Syngenta", "What does Syngenta do","What is Syngenta?","What does Syngenta do?"],
+         "responses": ["A leading agriculture company helping to improve global food security by enabling millions of farmers to make better use of available resources.","Syngenta AG is a global company that produces agrochemicals and seeds and is based in Basel, Switzerland. As a biotechnology company, it conducts genomic research."],
+         "context": [""],
+          "entity": [""],
+          "entity_required": "No"
+        },
+        {"tag": "related",
+         "patterns": ["Help me with data issue","Having access issue","Problems with system","Want some training material" ],
+         "responses": ["Ok, What is your stream?","Ok, What stream are you in?"],
+         "context": ["stream"],
+          "entity": [""],
+          "entity_required": "Yes"
+        },
+        {"tag": "stream",
+         "patterns": ["Commercial","Finance","Product Supply","System Related" ],
+         "responses": ["Ok,What can i help you with?", "How can I help you with it?"],
+         "context": ["category"]
+        }
+   ]
+}
